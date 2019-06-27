@@ -18,7 +18,7 @@ Function.prototype._apply = function () {
   if (!arges) {
     result = toThis.fun();
   } else {
-    result = toThis.fun(arges);
+    result = toThis.fun(...arges);
   }
 
   

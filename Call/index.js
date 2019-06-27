@@ -14,7 +14,7 @@ Function.prototype._call = function () {
   // this的指向当前函数  
   //（理解下面这两步很重要，核心）
   toThis.fun = this;
-  const result = toThis.fun(arges);
+  const result = toThis.fun(...arges);
 
 
   // toThis 没有func 属性，所以删除
